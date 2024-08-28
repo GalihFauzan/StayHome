@@ -59,7 +59,7 @@
                                 <?php
                                 include "../assets/conn/koneksi.php";
                                 $no = 1;
-                                $query = mysqli_query($conn, "SELECT user.nama_user,kamar.kamar,invoice.id_invoice,invoice.tanggal_invoice,invoice.status,invoice.jumlah_invoice,pembayaran.id_pembayaran,pembayaran.metode,pembayaran.foto,pembayaran.tanggal_pembayaran,pembayaran.jumlah_pembayaran FROM user INNER JOIN kamar ON user.id_kamar=kamar.id_kamar INNER JOIN invoice ON invoice.id_user=user.id_user INNER JOIN pembayaran ON pembayaran.id_invoice=invoice.id_invoice where invoice.status='Lunas'");
+                                $query = mysqli_query($conn, "SELECT user.nama_user,kamar.kamar,invoice.id_invoice,invoice.tanggal_invoice,invoice.status,invoice.jumlah_invoice,pembayaran.id_pembayaran,pembayaran.metode,pembayaran.tanggal_pembayaran,pembayaran.jumlah_pembayaran FROM user INNER JOIN kamar ON user.id_kamar=kamar.id_kamar INNER JOIN invoice ON invoice.id_user=user.id_user INNER JOIN pembayaran ON pembayaran.id_invoice=invoice.id_invoice where invoice.status='Lunas'");
                                 while ($d = mysqli_fetch_assoc($query)) {
 
                                 ?>
@@ -121,14 +121,6 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-lg-6">
-
-                                                              
-                                                                <div class="form-group">
-                                                                    <label for="foto">Bukti</label>
-                                                                    <input type="hidden" class="form-control-file" id="foto" name="old_foto" value="<?php echo $d['foto']; ?>">
-                                                                    <input type="file" class="form-control-file" name="foto[]" multiple />
-                                                                    <img src="../assets/bukti/<?php echo $d['foto']; ?>" width="200" alt="Gambar" class="rounded mt-2">
-                                                                </div>
                                                                 <div class="form-group">
                                                                     <label for="">Status</label>
                                                                     <select name="status" class="form-control">
