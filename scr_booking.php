@@ -26,7 +26,7 @@ if ($query) {
     } else if ($pembayaran == '5' && $ket == 'Bayar DP') {
         $invoice_query = mysqli_query($conn, "INSERT INTO invoice  VALUES ('$invoice_id ','$id','$date','100000','Belum Dibayar')");
     } else if ($pembayaran == '4' && $ket == 'Bayar Full') {
-        $invoice_query = mysqli_query($conn, "INSERT INTO invoice  VALUES ('$invoice_id ','$id','$date','2500000','Belum Dibayar')");
+        $invoice_query = mysqli_query($conn, "INSERT INTO invoice  VALUES ('$invoice_id ','$id','$date','2000000','Belum Dibayar')");
     } else if ($pembayaran == '5' && $ket == 'Bayar Full') {
         $invoice_query = mysqli_query($conn, "INSERT INTO invoice  VALUES ('$invoice_id ','$id','$date','300000','Belum Dibayar')");
     }
