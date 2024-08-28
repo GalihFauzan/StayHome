@@ -107,7 +107,7 @@
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label for="informasi">Keluhan</label>
-                                                                    <textarea name="pesan" class="form-control" id="mytextarea" readonly><?php echo $d['pesan']; ?> </textarea>
+                                                                    <textarea name="pesan" class="form-control" readonly><?php echo $d['pesan']; ?> </textarea>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label for="">Status</label>

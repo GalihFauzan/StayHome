@@ -93,7 +93,7 @@
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label for="informasi">Informasi</label>
-                                                                    <textarea name="info" class="form-control" id="mytextarea"><?php echo $d['informasi']; ?></textarea>
+                                                                    <textarea name="info" class="form-control"><?php echo $d['informasi']; ?></textarea>
                                                                 </div>
 
                                                             </div>
