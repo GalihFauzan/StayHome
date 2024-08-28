@@ -13,7 +13,7 @@ $ket            = mysqli_real_escape_string($conn, $_POST['ket']);
 $invoice_id = rand();
 
 // Sesuaikan dengan urutan kolom dalam tabel `user`
-$query = mysqli_query($conn, "INSERT INTO user VALUES ('','$nama_penyewa','$email','$alamat','$telp','$kamar','$pembayaran','$pass','$date','$ket')");
+$query = mysqli_query($conn, "INSERT INTO user (nama_penyewa,email,alamat,telp,kamar,pembayaran,pass,date,ket)VALUES ('$nama_penyewa','$email','$alamat','$telp','$kamar','$pembayaran','$pass','$date','$ket')");
 
 if ($query) {
     // Dapatkan id_user yang baru saja dimasukkan
