@@ -1,5 +1,18 @@
 <?php include "layout/header.php"; ?>
 
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16624586287">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16624586287');
+</script>
+</head>
+
 <body>
 
     <div class="site-loader"></div>
